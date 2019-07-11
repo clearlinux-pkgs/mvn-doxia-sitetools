@@ -4,7 +4,7 @@
 #
 Name     : mvn-doxia-sitetools
 Version  : 1.0
-Release  : 3
+Release  : 4
 URL      : https://repo1.maven.org/maven2/org/apache/maven/doxia/doxia-decoration-model/1.0/doxia-decoration-model-1.0.jar
 Source0  : https://repo1.maven.org/maven2/org/apache/maven/doxia/doxia-decoration-model/1.0/doxia-decoration-model-1.0.jar
 Source1  : https://repo1.maven.org/maven2/org/apache/maven/doxia/doxia-decoration-model/1.0/doxia-decoration-model-1.0.pom
@@ -26,15 +26,17 @@ Source16  : https://repo1.maven.org/maven2/org/apache/maven/doxia/doxia-site-ren
 Source17  : https://repo1.maven.org/maven2/org/apache/maven/doxia/doxia-site-renderer/1.4/doxia-site-renderer-1.4.pom
 Source18  : https://repo1.maven.org/maven2/org/apache/maven/doxia/doxia-site-renderer/1.6/doxia-site-renderer-1.6.jar
 Source19  : https://repo1.maven.org/maven2/org/apache/maven/doxia/doxia-site-renderer/1.6/doxia-site-renderer-1.6.pom
-Source20  : https://repo1.maven.org/maven2/org/apache/maven/doxia/doxia-site-renderer/1.8.1/doxia-site-renderer-1.8.1.jar
-Source21  : https://repo1.maven.org/maven2/org/apache/maven/doxia/doxia-site-renderer/1.8.1/doxia-site-renderer-1.8.1.pom
-Source22  : https://repo1.maven.org/maven2/org/apache/maven/doxia/doxia-sitetools/1.0/doxia-sitetools-1.0.pom
-Source23  : https://repo1.maven.org/maven2/org/apache/maven/doxia/doxia-sitetools/1.2/doxia-sitetools-1.2.pom
-Source24  : https://repo1.maven.org/maven2/org/apache/maven/doxia/doxia-sitetools/1.4/doxia-sitetools-1.4.pom
-Source25  : https://repo1.maven.org/maven2/org/apache/maven/doxia/doxia-sitetools/1.6/doxia-sitetools-1.6.pom
-Source26  : https://repo1.maven.org/maven2/org/apache/maven/doxia/doxia-sitetools/1.8.1/doxia-sitetools-1.8.1.pom
-Source27  : https://repo1.maven.org/maven2/org/apache/maven/doxia/doxia-skin-model/1.8.1/doxia-skin-model-1.8.1.jar
-Source28  : https://repo1.maven.org/maven2/org/apache/maven/doxia/doxia-skin-model/1.8.1/doxia-skin-model-1.8.1.pom
+Source20  : https://repo1.maven.org/maven2/org/apache/maven/doxia/doxia-site-renderer/1.7.1/doxia-site-renderer-1.7.1.jar
+Source21  : https://repo1.maven.org/maven2/org/apache/maven/doxia/doxia-site-renderer/1.7.1/doxia-site-renderer-1.7.1.pom
+Source22  : https://repo1.maven.org/maven2/org/apache/maven/doxia/doxia-site-renderer/1.8.1/doxia-site-renderer-1.8.1.jar
+Source23  : https://repo1.maven.org/maven2/org/apache/maven/doxia/doxia-site-renderer/1.8.1/doxia-site-renderer-1.8.1.pom
+Source24  : https://repo1.maven.org/maven2/org/apache/maven/doxia/doxia-sitetools/1.0/doxia-sitetools-1.0.pom
+Source25  : https://repo1.maven.org/maven2/org/apache/maven/doxia/doxia-sitetools/1.2/doxia-sitetools-1.2.pom
+Source26  : https://repo1.maven.org/maven2/org/apache/maven/doxia/doxia-sitetools/1.4/doxia-sitetools-1.4.pom
+Source27  : https://repo1.maven.org/maven2/org/apache/maven/doxia/doxia-sitetools/1.6/doxia-sitetools-1.6.pom
+Source28  : https://repo1.maven.org/maven2/org/apache/maven/doxia/doxia-sitetools/1.8.1/doxia-sitetools-1.8.1.pom
+Source29  : https://repo1.maven.org/maven2/org/apache/maven/doxia/doxia-skin-model/1.8.1/doxia-skin-model-1.8.1.jar
+Source30  : https://repo1.maven.org/maven2/org/apache/maven/doxia/doxia-skin-model/1.8.1/doxia-skin-model-1.8.1.pom
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : Apache-2.0
@@ -116,32 +118,38 @@ cp %{SOURCE18} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/doxia
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/doxia/doxia-site-renderer/1.6
 cp %{SOURCE19} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/doxia/doxia-site-renderer/1.6
 
-mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/doxia/doxia-site-renderer/1.8.1
-cp %{SOURCE20} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/doxia/doxia-site-renderer/1.8.1
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/doxia/doxia-site-renderer/1.7.1
+cp %{SOURCE20} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/doxia/doxia-site-renderer/1.7.1
+
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/doxia/doxia-site-renderer/1.7.1
+cp %{SOURCE21} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/doxia/doxia-site-renderer/1.7.1
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/doxia/doxia-site-renderer/1.8.1
-cp %{SOURCE21} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/doxia/doxia-site-renderer/1.8.1
+cp %{SOURCE22} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/doxia/doxia-site-renderer/1.8.1
+
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/doxia/doxia-site-renderer/1.8.1
+cp %{SOURCE23} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/doxia/doxia-site-renderer/1.8.1
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/doxia/doxia-sitetools/1.0
-cp %{SOURCE22} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/doxia/doxia-sitetools/1.0
+cp %{SOURCE24} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/doxia/doxia-sitetools/1.0
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/doxia/doxia-sitetools/1.2
-cp %{SOURCE23} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/doxia/doxia-sitetools/1.2
+cp %{SOURCE25} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/doxia/doxia-sitetools/1.2
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/doxia/doxia-sitetools/1.4
-cp %{SOURCE24} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/doxia/doxia-sitetools/1.4
+cp %{SOURCE26} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/doxia/doxia-sitetools/1.4
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/doxia/doxia-sitetools/1.6
-cp %{SOURCE25} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/doxia/doxia-sitetools/1.6
+cp %{SOURCE27} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/doxia/doxia-sitetools/1.6
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/doxia/doxia-sitetools/1.8.1
-cp %{SOURCE26} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/doxia/doxia-sitetools/1.8.1
+cp %{SOURCE28} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/doxia/doxia-sitetools/1.8.1
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/doxia/doxia-skin-model/1.8.1
-cp %{SOURCE27} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/doxia/doxia-skin-model/1.8.1
+cp %{SOURCE29} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/doxia/doxia-skin-model/1.8.1
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/doxia/doxia-skin-model/1.8.1
-cp %{SOURCE28} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/doxia/doxia-skin-model/1.8.1
+cp %{SOURCE30} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/doxia/doxia-skin-model/1.8.1
 
 
 %files
@@ -169,6 +177,8 @@ cp %{SOURCE28} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/doxia
 /usr/share/java/.m2/repository/org/apache/maven/doxia/doxia-site-renderer/1.4/doxia-site-renderer-1.4.pom
 /usr/share/java/.m2/repository/org/apache/maven/doxia/doxia-site-renderer/1.6/doxia-site-renderer-1.6.jar
 /usr/share/java/.m2/repository/org/apache/maven/doxia/doxia-site-renderer/1.6/doxia-site-renderer-1.6.pom
+/usr/share/java/.m2/repository/org/apache/maven/doxia/doxia-site-renderer/1.7.1/doxia-site-renderer-1.7.1.jar
+/usr/share/java/.m2/repository/org/apache/maven/doxia/doxia-site-renderer/1.7.1/doxia-site-renderer-1.7.1.pom
 /usr/share/java/.m2/repository/org/apache/maven/doxia/doxia-site-renderer/1.8.1/doxia-site-renderer-1.8.1.jar
 /usr/share/java/.m2/repository/org/apache/maven/doxia/doxia-site-renderer/1.8.1/doxia-site-renderer-1.8.1.pom
 /usr/share/java/.m2/repository/org/apache/maven/doxia/doxia-sitetools/1.0/doxia-sitetools-1.0.pom
