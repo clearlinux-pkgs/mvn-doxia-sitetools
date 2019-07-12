@@ -4,7 +4,7 @@
 #
 Name     : mvn-doxia-sitetools
 Version  : 1.0
-Release  : 4
+Release  : 5
 URL      : https://repo1.maven.org/maven2/org/apache/maven/doxia/doxia-decoration-model/1.0/doxia-decoration-model-1.0.jar
 Source0  : https://repo1.maven.org/maven2/org/apache/maven/doxia/doxia-decoration-model/1.0/doxia-decoration-model-1.0.jar
 Source1  : https://repo1.maven.org/maven2/org/apache/maven/doxia/doxia-decoration-model/1.0/doxia-decoration-model-1.0.pom
@@ -35,8 +35,10 @@ Source25  : https://repo1.maven.org/maven2/org/apache/maven/doxia/doxia-sitetool
 Source26  : https://repo1.maven.org/maven2/org/apache/maven/doxia/doxia-sitetools/1.4/doxia-sitetools-1.4.pom
 Source27  : https://repo1.maven.org/maven2/org/apache/maven/doxia/doxia-sitetools/1.6/doxia-sitetools-1.6.pom
 Source28  : https://repo1.maven.org/maven2/org/apache/maven/doxia/doxia-sitetools/1.8.1/doxia-sitetools-1.8.1.pom
-Source29  : https://repo1.maven.org/maven2/org/apache/maven/doxia/doxia-skin-model/1.8.1/doxia-skin-model-1.8.1.jar
-Source30  : https://repo1.maven.org/maven2/org/apache/maven/doxia/doxia-skin-model/1.8.1/doxia-skin-model-1.8.1.pom
+Source29  : https://repo1.maven.org/maven2/org/apache/maven/doxia/doxia-skin-model/1.7.1/doxia-skin-model-1.7.1.jar
+Source30  : https://repo1.maven.org/maven2/org/apache/maven/doxia/doxia-skin-model/1.7.1/doxia-skin-model-1.7.1.pom
+Source31  : https://repo1.maven.org/maven2/org/apache/maven/doxia/doxia-skin-model/1.8.1/doxia-skin-model-1.8.1.jar
+Source32  : https://repo1.maven.org/maven2/org/apache/maven/doxia/doxia-skin-model/1.8.1/doxia-skin-model-1.8.1.pom
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : Apache-2.0
@@ -145,11 +147,17 @@ cp %{SOURCE27} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/doxia
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/doxia/doxia-sitetools/1.8.1
 cp %{SOURCE28} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/doxia/doxia-sitetools/1.8.1
 
-mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/doxia/doxia-skin-model/1.8.1
-cp %{SOURCE29} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/doxia/doxia-skin-model/1.8.1
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/doxia/doxia-skin-model/1.7.1
+cp %{SOURCE29} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/doxia/doxia-skin-model/1.7.1
+
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/doxia/doxia-skin-model/1.7.1
+cp %{SOURCE30} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/doxia/doxia-skin-model/1.7.1
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/doxia/doxia-skin-model/1.8.1
-cp %{SOURCE30} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/doxia/doxia-skin-model/1.8.1
+cp %{SOURCE31} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/doxia/doxia-skin-model/1.8.1
+
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/doxia/doxia-skin-model/1.8.1
+cp %{SOURCE32} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/doxia/doxia-skin-model/1.8.1
 
 
 %files
@@ -186,5 +194,7 @@ cp %{SOURCE30} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/doxia
 /usr/share/java/.m2/repository/org/apache/maven/doxia/doxia-sitetools/1.4/doxia-sitetools-1.4.pom
 /usr/share/java/.m2/repository/org/apache/maven/doxia/doxia-sitetools/1.6/doxia-sitetools-1.6.pom
 /usr/share/java/.m2/repository/org/apache/maven/doxia/doxia-sitetools/1.8.1/doxia-sitetools-1.8.1.pom
+/usr/share/java/.m2/repository/org/apache/maven/doxia/doxia-skin-model/1.7.1/doxia-skin-model-1.7.1.jar
+/usr/share/java/.m2/repository/org/apache/maven/doxia/doxia-skin-model/1.7.1/doxia-skin-model-1.7.1.pom
 /usr/share/java/.m2/repository/org/apache/maven/doxia/doxia-skin-model/1.8.1/doxia-skin-model-1.8.1.jar
 /usr/share/java/.m2/repository/org/apache/maven/doxia/doxia-skin-model/1.8.1/doxia-skin-model-1.8.1.pom
