@@ -4,7 +4,7 @@
 #
 Name     : mvn-doxia-sitetools
 Version  : 1.0
-Release  : 10
+Release  : 11
 URL      : https://repo1.maven.org/maven2/org/apache/maven/doxia/doxia-decoration-model/1.0/doxia-decoration-model-1.0.jar
 Source0  : https://repo1.maven.org/maven2/org/apache/maven/doxia/doxia-decoration-model/1.0/doxia-decoration-model-1.0.jar
 Source1  : https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-decoration-model/1.7.1/doxia-decoration-model-1.7.1.jar
